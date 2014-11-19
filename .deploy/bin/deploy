@@ -5,7 +5,7 @@ i = 0
 while true
   msg = (i % 10).to_s * 20
   STDOUT.puts "stdout: " + msg
-  STDERR.puts "stdout: " + msg
+  STDERR.puts "stderr: " + msg
   i += 1
   break if i > 15
   sleep 1
