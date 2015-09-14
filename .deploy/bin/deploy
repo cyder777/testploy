@@ -1,7 +1,7 @@
-#!/usr/bin/env ruby
+#!/bin/bash
 
 echo "start"
 
-sleep 60
+sleep 120
 
 echo "finish"
