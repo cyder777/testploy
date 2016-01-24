@@ -1,12 +1,8 @@
-#!/usr/bin/env ruby
+#!/bin/bash
 
-i = 0
-
-while true
-  msg = (i % 10).to_s * 20
-  STDOUT.puts "stdout: " + msg
-  STDERR.puts "stderr: " + msg
-  i += 1
-  break if i > 15
+for i in {1..15}; do
+  msg="$i$i$i$i$i$i$i$i$i$i"
+  echo "stdout: $msg"
+  echo "stderr: $msg" 1>&2
   sleep 1
-end
+done
