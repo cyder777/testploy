@@ -4,9 +4,9 @@ echo DEPLOY_ENV=$DEPLOY_ENV
 
 echo "Sending stdout and stderr for 15 seconds"
 
-fora i in {0..9} {0..5}; do
+for i in {0..9} {0..5}; do
   msg="$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i$i"
   echo "stdout: $msg"
   echo "stderr: $msg" 1>&2
-  sleep 1
+  sleepa 1
 done
